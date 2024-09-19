@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('birthday.png') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+    color: #ff69b4;
+}
+
+/* Timer text color set to pink */
+#timer {
+    font-size: 40px;
+    color: #ff69b4;
+}
+
+#celebration {
+    margin-top: 20px;
+    position: relative;
+}
+
+#video-message {
+    margin-top: 20px;
+}
+
+/* Change color of "Happy Birthday, Dear Kneez!" to pink */
+#video-message h2 {
+    color: #ff69b4; /* Pink color for the birthday message */
+}
+
+#balloons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.balloon {
+    width: 80px;
+    height: auto;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+.birthday-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
